@@ -1,11 +1,10 @@
-def hcf(x, y):
+def compute_gcd(x, y):
    while(y):
        x, y = y, x % y
    return x
-def lcmm(x, y):
-   lcm = (x*y)//hcf(x,y)
+def compute_lcm(x, y):
+   lcm = (x*y)//compute_gcd(x,y)
    return lcm
-num1 = 54
-num2 = 24
-print("The L.C.M. is", lcmm(num1, num2))
-# out-The L.C.M. is 216
+num1 = 12
+num2 = 14
+print("The L.C.M. is", compute_lcm(num1, num2))
