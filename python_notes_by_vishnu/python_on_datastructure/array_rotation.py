@@ -14,8 +14,24 @@ A = [8, 7, 2, 5, 3, 1]
 sum = 10
 findPair(A, sum)
 print("sum is :",sum)
+
 # out-Pair found (2, 8)
 # Pair found (3, 7)
 # Pair not found
 # sum is : 10
+'''def findpair(arr,s):
+    arr.sort()
+    (l,h) = (0,len(arr)-1)
+    while l<h:
+        if arr[l]+arr[h]==s:
+            print("pair is found:",(arr[l],arr[h]))
+        if arr[l]+arr[h]<s:
+            l = l+1
+        else:
+            h = h+1
+    print("pair is not found:")
+
+arr= [8, 7, 2, 5, 3, 1]
+s = 10
+findpair(arr,s)'''
 
