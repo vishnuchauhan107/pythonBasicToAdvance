@@ -8,4 +8,4 @@ else:
         # out-Enter the number:4
         # number is not prime
         # out-Enter the number:37
-    # number is  prime
+        # number is  prime
